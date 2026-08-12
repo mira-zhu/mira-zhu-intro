@@ -1,0 +1,64 @@
+body {
+  background: #9aa4b1;
+  color: #154c79;
+  font-family: Arial, sans-serif;
+  
+}
+
+.default {
+  margin-top:8px;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+#About {
+  text-align: right;
+}
+
+h1 {
+  color: #0c302c;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: 800;
+  color: #0c302c;
+}
+
+.experience-container {
+  display: flex;
+  width: 600px;
+}
+
+.experience-title, .experience-date {
+  background: #8cc9db;
+  flex: 1;
+  margin: 10px;
+  padding: 3px;
+}
+
+.experience-date {
+  text-align: right;
+}
+
+.connect-container {
+  display: flex;
+  width: 300px;
+}
+
+.connect-item {
+  background: #eab676;
+  flex: 1;
+  margin: 10px;
+  text-align: center;
+  padding: 3px;
+}
+
+a {
+  color: #154c79;
+}
+
+nav li {
+  display: inline;
+  margin: 20px;
+}
