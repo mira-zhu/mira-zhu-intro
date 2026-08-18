@@ -25,6 +25,19 @@ h2 {
   color: #0c302c;
 }
 
+.skills-container {
+  display: flex;
+  width: 1000px; 
+}
+
+.skills-item {
+  background: #efb9fa;
+  flex: 1;
+  margin: 10px;
+  text-align: center;
+  padding: 3px;
+}
+
 .experience-container {
   display: flex;
   width: 600px;
