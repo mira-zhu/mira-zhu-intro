@@ -27,7 +27,6 @@ for (let i = 0; i < skills.length; i++) {
 
 // add message handling
 const messageForm = document.getElementsByName("leave_message")[0];
-const submitButton = messageForm.querySelector("button");
 
 messageForm.addEventListener("submit", function(e) {
     // prevent automatic page refresh upon submit 
