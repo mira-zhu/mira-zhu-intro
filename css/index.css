@@ -92,7 +92,7 @@ div.form-group > label {
 }
 
 #messages {
-  display: none /* on load only; overwritten when message added */
+  display: none; /* on load only; overwritten when message added */
 }
 
 #messages > ul {
