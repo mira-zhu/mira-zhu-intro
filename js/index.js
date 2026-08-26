@@ -75,15 +75,3 @@ messageForm.addEventListener("submit", function(e) {
     // reset form 
     messageForm.reset();
 })
-
-/*
-const messageSection = document.querySelector("#Messages");
-const messageList = messageSection.querySelector("ul");
-
-let messages = messageSection.querySelectorAll("li");
-let numMessages = messages.length;
-
-if (numMessages === 0) {
-    messageSection.style.display = "none";
-} 
-    */
