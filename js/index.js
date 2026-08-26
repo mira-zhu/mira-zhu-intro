@@ -15,7 +15,7 @@ footer.appendChild(copyright);
 // add list of skills
 const skills = ["Knitting", "Baking", "Adding numbers", "Making computational art"];
 
-const skillsSection = document.querySelector("#Skills");
+const skillsSection = document.querySelector("#skills");
 const skillsList = skillsSection.querySelector("ul");
 
 for (let i = 0; i < skills.length; i++) {
@@ -42,7 +42,7 @@ messageForm.addEventListener("submit", function(e) {
     console.log(message);
 
     // add submitted email and message to message list, with remove button
-    const messageSection = document.querySelector("#Messages");
+    const messageSection = document.querySelector("#messages");
     const messageList = messageSection.querySelector("ul");
 
     // show message section if there is a message added
