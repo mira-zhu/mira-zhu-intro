@@ -11,7 +11,7 @@ body {
   padding-right: 18px;
 }
 
-#About {
+#about {
   text-align: right;
 }
 
@@ -28,6 +28,7 @@ h2 {
 .skills-container {
   display: flex;
   width: 1000px; 
+  padding-left: 0px;
 }
 
 .skills-item {
@@ -35,7 +36,11 @@ h2 {
   flex: 1;
   margin: 10px;
   text-align: center;
-  padding: 3px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-right: 3px;
+  padding-left: 0px;
+  list-style-type: none;
 }
 
 .experience-container {
@@ -74,4 +79,48 @@ a {
 nav li {
   display: inline;
   margin: 20px;
+}
+
+.form-group {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+div.form-group > label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#messages {
+  display: none; /* on load only; overwritten when message added */
+}
+
+#messages > ul {
+  padding-left: 0px;
+}
+
+#usersMessage {
+  width: 350px;
+  height: 120px;
+}
+
+.message-item {
+  display:flex;
+  border: 2px;
+  border-style: solid;
+  list-style-type: none;
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 330px;
+}
+
+button {
+  width: 90px;
+  height: 35px;
+  text-align: center;
+}
+
+.message-item button {
+  margin-left: auto;
+  margin-right: 5px;
 }
