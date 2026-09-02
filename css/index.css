@@ -25,14 +25,13 @@ h2 {
   color: #0c302c;
 }
 
-.skills-container {
+.skills-container, .projects-container {
   display: flex;
   width: 1000px; 
   padding-left: 0px;
 }
 
-.skills-item {
-  background: #efb9fa;
+.skills-item, .projects-item {
   flex: 1;
   margin: 10px;
   text-align: center;
@@ -41,6 +40,15 @@ h2 {
   padding-right: 3px;
   padding-left: 0px;
   list-style-type: none;
+}
+
+.skills-item {
+    background: #efb9fa;
+}
+
+.projects-item {
+  background: #fff5bf;
+  max-width: 250px;
 }
 
 .experience-container {
