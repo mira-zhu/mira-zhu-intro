@@ -1,5 +1,4 @@
 // add footer with copyright
-
 const footer = document.createElement("footer");
 const body = document.querySelector("body");
 body.appendChild(footer);
@@ -74,3 +73,30 @@ messageForm.addEventListener("submit", function(e) {
     // reset form 
     messageForm.reset();
 })
+
+// add github projects
+const projectSection = document.querySelector("#projects");
+const projectList = projectSection.querySelector("ul");
+
+let repositories;
+
+function setter(value) {
+    repositories = value;
+}
+
+function createProjectList(array) {
+    for (let i = 0; i < array.length; i++) {
+        const project = document.createElement("li");
+        project.classList.add("projects-item");
+        project.textContent = array[i].name;
+        projectList.appendChild(project);
+    }
+}
+
+fetch("https://api.github.com/users/mira-zhu/repos")
+.then(response => response.json())
+.then(projects => setter(projects))
+.then(() => createProjectList(repositories))
+.catch(error => console.log(error));
+
+
