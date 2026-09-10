@@ -1,11 +1,8 @@
 const dogAPIKey = "live_AhsLLhCvs5njCptuBzOxKjsaDJ5Re88jHGsfF9Nx7QIenflJszeo6fPFmSJLFzQd";
 const body = document.querySelector("body");
 
-// API endpoint 1: doggo image
-
 const doggoImage = document.createElement("img");
 body.appendChild(doggoImage);
-// todo: add styling class for image 
 
 async function fetchImage(breed_id) {
     const url = `https://api.thedogapi.com/v1/images/search?limit=1&breed_id=${breed_id}&order=RANDOM`;
@@ -32,10 +29,10 @@ toggleButton.setAttribute("type", "button");
 
 toggleButton.addEventListener("click", function(e) {
     if (toggleButton.textContent.includes("Samoyed")) {
-        fetchImage(214); // fetch samoyed image
+        fetchImage(214); // API endpoint 1: fetch samoyed image
         toggleButton.textContent = "Show Me a Retriever Instead";
     } else { 
-        fetchImage(121); // fetch retriever image
+        fetchImage(121); // API endpoint 2: fetch retriever image
         toggleButton.textContent = "Show Me a Samoyed Instead";
     }
 });
