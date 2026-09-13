@@ -34,12 +34,19 @@ h2 {
 .skills-item, .projects-item {
   flex: 1;
   margin: 10px;
-  text-align: center;
   padding-top: 3px;
   padding-bottom: 3px;
   padding-right: 3px;
   padding-left: 0px;
   list-style-type: none;
+}
+
+.skills-item {
+  text-align: center;
+}
+
+.projects-item {
+  justify-content: center;
 }
 
 .skills-item {
