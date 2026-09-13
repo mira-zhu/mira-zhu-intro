@@ -2,7 +2,6 @@ body {
   background: #9aa4b1;
   color: #154c79;
   font-family: Arial, sans-serif;
-  
 }
 
 .default {
@@ -16,6 +15,7 @@ body {
 }
 
 h1 {
+  font-size: 36px;
   color: #0c302c;
 }
 
