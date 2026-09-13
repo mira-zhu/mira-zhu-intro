@@ -10,6 +10,15 @@ body {
   padding-right: 18px;
 }
 
+a {
+  color: #154c79;
+}
+
+nav li {
+  display: inline;
+  margin: 20px;
+}
+
 #about {
   text-align: right;
 }
@@ -25,6 +34,7 @@ h2 {
   color: #0c302c;
 }
 
+/* Skills and Projects */
 .skills-container, .projects-container {
   display: flex;
   width: 1000px; 
@@ -58,6 +68,7 @@ h2 {
   max-width: 250px;
 }
 
+/* Experience */
 .experience-container {
   display: flex;
   width: 600px;
@@ -74,6 +85,7 @@ h2 {
   text-align: right;
 }
 
+/* Connect */
 .connect-container {
   display: flex;
   width: 500px;
@@ -86,16 +98,7 @@ h2 {
   text-align: center;
   padding: 3px;
 }
-
-a {
-  color: #154c79;
-}
-
-nav li {
-  display: inline;
-  margin: 20px;
-}
-
+/* Message Form */
 .form-group {
   margin-top: 10px;
   margin-bottom: 10px;

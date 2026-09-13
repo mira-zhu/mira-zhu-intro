@@ -102,5 +102,3 @@ fetch("https://api.github.com/users/mira-zhu/repos")
 .then(projects => setter(projects))
 .then(() => createProjectList(repositories))
 .catch(error => console.log(error));
-
-
