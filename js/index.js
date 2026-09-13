@@ -86,10 +86,14 @@ function setter(value) {
 
 function createProjectList(array) {
     for (let i = 0; i < array.length; i++) {
-        const project = document.createElement("li");
-        project.classList.add("projects-item");
-        project.textContent = array[i].name;
-        projectList.appendChild(project);
+        const projectItem = document.createElement("li");
+        projectList.appendChild(projectItem);
+        const projectLink = document.createElement("a");
+        projectItem.appendChild(projectLink);
+
+        projectList.classList.add("projects-item");
+        projectLink.setAttribute("href", array[i].html_url);
+        projectLink.textContent = array[i].name;
     }
 }
 
@@ -98,5 +102,3 @@ fetch("https://api.github.com/users/mira-zhu/repos")
 .then(projects => setter(projects))
 .then(() => createProjectList(repositories))
 .catch(error => console.log(error));
-
-

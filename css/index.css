@@ -10,6 +10,15 @@ body {
   padding-right: 18px;
 }
 
+a {
+  color: #154c79;
+}
+
+nav li {
+  display: inline;
+  margin: 20px;
+}
+
 #about {
   text-align: right;
 }
@@ -25,6 +34,7 @@ h2 {
   color: #0c302c;
 }
 
+/* Skills and Projects */
 .skills-container, .projects-container {
   display: flex;
   width: 1000px; 
@@ -34,12 +44,19 @@ h2 {
 .skills-item, .projects-item {
   flex: 1;
   margin: 10px;
-  text-align: center;
   padding-top: 3px;
   padding-bottom: 3px;
   padding-right: 3px;
   padding-left: 0px;
   list-style-type: none;
+}
+
+.skills-item {
+  text-align: center;
+}
+
+.projects-item {
+  justify-content: center;
 }
 
 .skills-item {
@@ -51,6 +68,7 @@ h2 {
   max-width: 250px;
 }
 
+/* Experience */
 .experience-container {
   display: flex;
   width: 600px;
@@ -67,9 +85,10 @@ h2 {
   text-align: right;
 }
 
+/* Connect */
 .connect-container {
   display: flex;
-  width: 300px;
+  width: 500px;
 }
 
 .connect-item {
@@ -79,16 +98,7 @@ h2 {
   text-align: center;
   padding: 3px;
 }
-
-a {
-  color: #154c79;
-}
-
-nav li {
-  display: inline;
-  margin: 20px;
-}
-
+/* Message Form */
 .form-group {
   margin-top: 10px;
   margin-bottom: 10px;
